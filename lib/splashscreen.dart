@@ -1,6 +1,6 @@
 import 'dart:async';
+import 'package:automate_sms/smspage.dart';
 import 'package:lottie/lottie.dart';
-import 'package:automate_sms/homepage.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(
-        Duration(seconds: 6), ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage())));
+        Duration(seconds: 5), ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>SmsPage())));
   }
 
   Widget build(BuildContext context) {
@@ -60,7 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
             //end image section
             SizedBox(height: 10,),
             //start connect
-            Text("Connect - Massage - Share - Enjoy - Live",
+            Text("Connect - Massage - Share - Enjoy",
               style: TextStyle(
                   color: Colors.white
               ),
