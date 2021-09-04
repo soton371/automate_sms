@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-permission android:name="android.permission.READ_SMS"/>
    <application
-        android:label="automate_sms"
+        android:label="Auto Send"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

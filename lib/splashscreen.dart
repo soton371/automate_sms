@@ -14,7 +14,8 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(
-        Duration(seconds: 5), ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>SmsPage())));
+        Duration(seconds: 5), ()=> Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>SmsPage()), (route) => false)
+    );
   }
 
   Widget build(BuildContext context) {

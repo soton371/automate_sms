@@ -9,7 +9,7 @@ class SmsPage extends StatefulWidget {
 }
 
 class _SmsPageState extends State<SmsPage> {
-
+  //for sms
   final Telephony _telephony = Telephony.instance;
   final _formkey = GlobalKey<FormState>();
   final TextEditingController _phoneController = TextEditingController();
